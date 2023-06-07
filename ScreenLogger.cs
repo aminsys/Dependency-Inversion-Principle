@@ -1,6 +1,6 @@
 namespace Dependency_Inversion_Principle
 {
-    public class ScreenLogger
+    public class ScreenLogger: ILogger
     {
         public void Log(string message)
         {

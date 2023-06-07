@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            var logger = new ScreenLogger();
+            var logger = new FileLogger("log.log");
+            // var logger = new ScreenLogger();
 
             var operations = new MathoOperations(logger);
 

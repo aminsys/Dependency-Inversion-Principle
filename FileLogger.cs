@@ -1,6 +1,6 @@
-namespace Dependency_Inversion_PrincipleType
+namespace Dependency_Inversion_Principle
 {
-    public class FileLogger
+    public class FileLogger: ILogger
     {
         private readonly string _filePath;
 
@@ -8,7 +8,7 @@ namespace Dependency_Inversion_PrincipleType
         
         public void Log(string message)
         {
-            File.AppendAllText(_filePath, message + Environment.NewLine);
+            File.AppendAllText(_filePath, "Message: " + message + Environment.NewLine);
         }
     }
 }
